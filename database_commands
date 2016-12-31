@@ -1,0 +1,33 @@
+
+
+CREATE:
+1.create table comments(time_stamp DATETIME, email VARCHAR(20), comment VARCHAR(200))
+//Creates the comment table with filed time_stamp, email and comment
+
+2.create table quiz(id int not null auto_increment,question varchar(100), answer_one varchar(30),anwser_two varchar(30),anwser_three varchar(30), anwser_four varchar(30), correct_answer int, primary key(id));
+//Create the table for the quiz
+
+QUERIES:
+1.select COUNT(*) from comments //Return the records number
+
+2.1.select * from comments order by time_stamp DESC LIMIT 10; //Return the first 10 records
+
+2.2.select * from comments order by time_stamp DESC LIMIT 10,20; //Return the from 10 to 20
+
+
+
+INSERTS:
+1. insert into comments (time_stamp,email,comment) values(now(),"eakirtas@csd.auth.gr","Mr. Stallman ftw");
+//Example for insertin values in Comments
+
+2.
+
+Php and MySql
+
+Για την εισαγώγη χρεισιμοποιούμε την insert με τα πεδία μας σημαντίκο ειναι στην αρχή να υπάρχει το now()
+
+Για την εμφάνιση των σχολίων αρχικά περνούμε τον συνολικό αριθμό QUERIES.1 στην συνέχεια διαιρούμε με το 10 και κανούμε στρογγυλοποιηση προς τα πάνω και με εναν iterator χρεισιμοποιούμε την QUERIES.2.2
+για n φορες 0 - 10, 10-20,...
+
+Αύτα νομιζω
+
