@@ -4,7 +4,7 @@ CREATE:
 1.create table comments(time_stamp DATETIME, email VARCHAR(20), comment VARCHAR(200))
 //Creates the comment table with filed time_stamp, email and comment
 
-2.create table quiz(id int not null auto_increment,question varchar(100), answer_one varchar(30),anwser_two varchar(30),anwser_three varchar(30), anwser_four varchar(30), correct_answer int, primary key(id));
+2.create table quiz(id int not null auto_increment,question varchar(100), answer_one varchar(30), answer_two varchar(30),answer_three varchar(30),answerr_four varchar(30), correct_answer int, primary key(id));OB
 //Create the table for the quiz
 
 QUERIES:
@@ -20,7 +20,8 @@ INSERTS:
 1. insert into comments (time_stamp,email,comment) values(now(),"eakirtas@csd.auth.gr","Mr. Stallman ftw");
 //Example for insertin values in Comments
 
-2.
+2.insert into quiz (question, answer_one, answer_two, answer_three, answer_four, correct_answer) values("Which is the first name of Mr.Stallman","Devidson", "Richard", "John", "George",2);
+
 
 Php and MySql
 
